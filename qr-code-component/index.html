@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | QR code component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        font-family: 'Outfit', sans-serif;
+      }
+
+      :root {
+        /* - White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%) */
+        --white: hsl(0, 0%, 100%);
+        --light-gray: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+      }
+      .customShadow {
+        box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body class="relative bg-[#D5E1EF] min-h-screen h-full">
+    <div
+      class="relative w-full min-h-[100vh] flex flex-col items-center justify-center"
+    >
+      <div
+        class="rounded-xl bg-[var(--white)] customShadow w-[320px] p-4 flex flex-col items-center justify-center"
+      >
+        <div class="rounded-xl overflow-hidden">
+          <img
+            src="./images/image-qr-code.png"
+            alt="QR code"
+            class="w-full rounded-t-md"
+          />
+        </div>
+        <div class="w-[288px] py-[32px] px-[16px]">
+          <h1 class="font-bold text-center text-[var(--dark-blue)] text-[22px]">
+            Improve your front-end skills by building projects
+          </h1>
+          <p
+            class="mt-[12px] text-center text-[var(--grayish-blue)] text-[15px]"
+          >
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+
+      <div class="attribution mt-4">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nacho</a>.
+      </div>
+    </div>
+  </body>
+</html>
